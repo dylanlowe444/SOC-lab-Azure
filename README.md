@@ -1,4 +1,4 @@
-SOC-lab-Azure
+SOC lab using Azure
 
 *****Project Overview*****
 
@@ -34,4 +34,8 @@ Skills Demonstrated
 - Incident Response
 - KQL Query Development
 
-Screenshots will be added below.
+Screenshots are added to a separate folder.
+
+What I learned;
+
+Through this project, I gained hands-on experience building and monitoring a cloud-based SOC environment in Microsoft Azure. I learned how to deploy and secure virtual machines, configure data collection rules, connect endpoints to Microsoft Sentinel, and use Kusto Query Language (KQL) to analyze security events. I also learned how threat intelligence data, such as GeoIP information, can be used to enrich logs and visualize attack activity. This project improved my understanding of SIEM operations, log management, threat detection, and incident investigation workflows.
