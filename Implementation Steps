@@ -1,0 +1,43 @@
+Project Workflow
+
+
+Create the Azure Environment
+Create a resource group, virtual network (VNet), subnet, network security group (NSG), and deploy a Windows virtual machine (VM) in Microsoft Azure.
+
+
+Configure Network Access
+Configure NSG inbound rules to allow RDP traffic to the VM. Verify that the VM is reachable from the public internet by testing connectivity.
+
+
+Install and Configure the Azure Monitor Agent
+Install the Azure Monitor Agent (AMA) on the VM and connect the VM to a Log Analytics Workspace.
+
+
+Create a Data Collection Rule
+Configure a Data Collection Rule (DCR) to collect Windows security event logs and other relevant telemetry.
+
+
+Enable Microsoft Sentinel
+Enable Microsoft Sentinel on the Log Analytics Workspace and verify that logs from the VM are being ingested successfully.
+
+
+Add GeoIP Enrichment
+Create a watchlist using a pre-built GeoIP dataset to enrich incoming security logs with geographic information.
+
+
+Analyze Logs with KQL
+Use Kusto Query Language (KQL) to query security events and correlate IP addresses with GeoIP data to identify the source locations of login attempts.
+
+
+Build a Workbook Visualization
+Create a Microsoft Sentinel workbook and paste the map visualization query to display attack sources on a geographic map.
+
+
+Generate and Investigate Events
+Generate authentication activity against the VM and observe the resulting security events, failed logons, and geographic distribution of connection attempts in Sentinel.
+
+
+Review Findings
+Review the collected logs, validate that logs are flowing correctly, and document observations. 
+
+
