@@ -34,6 +34,4 @@ Skills Demonstrated
 - Incident Response
 - KQL Query Development
 
-Screenshots
-
 Screenshots will be added below.
