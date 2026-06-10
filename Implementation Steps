@@ -27,6 +27,14 @@ Create a watchlist using a pre-built GeoIP dataset to enrich incoming security l
 
 Analyze Logs with KQL
 Use Kusto Query Language (KQL) to query security events and correlate IP addresses with GeoIP data to identify the source locations of login attempts.
+let GeoIPDB_FULL = _GetWatchlist("geoip");
+let WindowsEvents = SecurityEvent
+    | where IpAddress == <attacker IP address>
+    | where EventID == 4625
+    | order by TimeGenerated desc
+    | evaluate ipv4_lookup(GeoIPDB_FULL, IpAddress, network);
+WindowsEvents
+
 
 
 Build a Workbook Visualization
